@@ -184,6 +184,8 @@ RUN colcon build --packages-select surface_relay
 # RUN ["/bin/bash", "-c", "source /opt/ros/${ROS_DISTRO}/setup.bash"]
 RUN ["/bin/bash", "-c", "source install/setup.bash"]
 
+WORKDIR $ROS_2_WS/src/surface_relay/surface_relay
+
 ### setup entrypoint script for sourcing
 #TODO maybe use a roslaunch file?
 ## this is causing the whole container to exit, not going to use it for now...
