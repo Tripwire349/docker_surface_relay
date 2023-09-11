@@ -15,6 +15,5 @@ Note: amperage sensor has 2 data ports to the phidget hub - use the bottom data 
 [3] run the dockerfile
 ./run_docker_surface_relay
 
-[4] within the docker navigate to the correct folder and start the monitoring system
-cd src/surface_relay/surface_relay
+[4] start the monitoring system
 ./run_surface_relay_health_monitoring.sh
