@@ -13,4 +13,4 @@ echo Note: amperage sensor has 2 data ports to the phidget hub - use the bottom 
 echo
 read -p ""
 
-docker run -it --privileged surface_relay
+docker run -it --privileged -v ~/docker_projects/docker_surface_relay/data_storage_sensors:/opt/ros2_ws/src/surface_relay/surface_relay/data_storage_sensors surface_relay
